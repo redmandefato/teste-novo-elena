@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#0b0b0f"/>
+  <circle cx="330" cy="70" r="120" fill="#10b985" opacity=".18"/>
+  <text x="40" y="110" font-family="Inter,Arial" font-size="22" font-weight="700" fill="#a7f3d6">SUPER</text>
+  <text x="40" y="170" font-family="Inter,Arial" font-size="56" font-weight="900" fill="#fff">BLACK</text>
+  <text x="40" y="228" font-family="Inter,Arial" font-size="56" font-weight="900" fill="#fff">FRIDAY</text>
+  <rect x="40" y="258" width="200" height="56" rx="12" fill="#10b985"/>
+  <text x="140" y="296" font-family="Inter,Arial" font-size="30" font-weight="900" text-anchor="middle" fill="#0b0b0f">ATÉ 50%</text>
+  <text x="40" y="352" font-family="Inter,Arial" font-size="15" font-weight="600" fill="#cbd5e1">Cupom BLACK50 · Vitta Suplementos</text>
+</svg>
