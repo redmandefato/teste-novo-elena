@@ -50,7 +50,8 @@ export function activeFactor(startISO: string, endISO: string | null, key: strin
   const e = endISO ? new Date(endISO + 'T23:59:59').getTime() : null;
   if (s >= end || (e !== null && e < start)) return { days: 0, factor: 0 };
   const from = Math.max(s, start);
-  const to = e === null ? end - 1 : Math.min(e, end - 1);
+  // Regra observada na referência: quando a conta é encerrada no meio do mês, o dia seguinte ao fim também é cobrado.
+  const to = e === null ? end - 1 : Math.min(e + DAY, end - 1);
   const fullMonth = from === start && to === end - 1;
   const days = Math.round((day0(to) - day0(from)) / DAY) + 1;
   return { days: Math.min(days, daysBase), factor: fullMonth ? 1 : Math.min(days, daysBase) / daysBase };
